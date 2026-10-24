@@ -1,13 +1,13 @@
 [Unit]
 Description=GG Asus Fan Control
 After=multi-user.target
+StartLimitIntervalSec=0
 
 [Service]
 Type=simple
 ExecStart=/usr/bin/python3 /opt/GG-Asus-Fan-Control/GG-Asus-Fan-Control.py --service
 Restart=on-failure
 RestartSec=5
-StartLimitIntervalSec=0
 User=root
 
 [Install]
